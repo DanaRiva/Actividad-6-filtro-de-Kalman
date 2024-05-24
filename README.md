@@ -33,3 +33,8 @@ Al momento de aumentar la velocidad lineal y angular el sistema se sigue comport
 
 ### e) Modifica los parámetros de las matrices de covarianzas y responde lo siguiente: ¿tiene el mismo comportamiento el Sistema?, ¿qué ocurre si aumentan los parámetros de la matriz Qk?, ¿qué ocurre si aumentan los parámetros de la matriz Rk? 
 
+Si cambiamos los valores iniciales de la matriz de covarianza al comparar las salidas de cada iteración con las salidas de sigma y del vector de posición podemos ver que no se genera una gran diferencia entre las salidas, o al menos no es una diferencia verdaderamente importante, los valores de salida no varían mucho mostrando un comportamiento similar en ambos casos.
+
+Al cambiar los valores de Qk, se genera un cambio en la covarianza proporcional a la variación generada en la matriz, sin embargo a pesar de casi duplicar o triplicar los valores no se percibe un cambio muy significativo en los valores de la covarianza en las iteraciones.
+
+Con los cambios en la matriz Rk podemos ver cabios en las posiciones lineales y angulares, así como un incremento en los valores de las matrices de covarianza de salida de cada iteración.
